@@ -23,7 +23,7 @@ GitHub:
 https://github.com/uncertain6
 
 LinkedIn:
-https://www.linkedin.com/in/yuqi-liu-7b43482a8/
+www.linkedin.com/in/yuqiliu07
 
 Email:
 yuqiliu2007@gmail.com
