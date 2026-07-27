@@ -1,91 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yuqi Liu | Portfolio</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="img/icon.ico">
-</head>
-<body>
-<div class="dome-shine"></div>
+    
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuqi Liu's Web</title>
+    <link rel="icon" href="img/icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
 
-<div class="viewport">
-<div class="app">
-  <aside class="sidebar glass">
-    <div class="logo"></div>
-    <h1>Welcome to YuqiOS</h1>
-    <nav>
-      <a class="active" onclick="showPanel('home',this)" onmouseenter="hoverSound(600)"><i class="fa-solid fa-house"></i> Home</a>
-      <a onclick="showPanel('about',this)" onmouseenter="hoverSound(620)"><i class="fa-solid fa-user"></i> About</a>
-      <a onclick="showPanel('projects',this)" onmouseenter="hoverSound(640)"><i class="fa-solid fa-folder-open"></i> Projects</a>
-      <a onclick="showPanel('contact',this)" onmouseenter="hoverSound(660)"><i class="fa-solid fa-envelope"></i> Contact</a>
-    </nav>
-    <div class="icon-row">
-      <a href="https://github.com/uncertain6" title="GitHub" onmouseenter="hoverSound(750)"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/yuqiliu07/" title="LinkedIn" onmouseenter="hoverSound(770)"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="https://www.instagram.com/yuqi1363/" title="Instagram" onmouseenter="hoverSound(790)"><i class="fa-brands fa-instagram"></i></a>
+  <body>
+    <div class="content">
+      <div class="left glass">
+        <div class="logo"></div>
+        <h1>YuqiOS v1.0</h1>
+        <nav>
+          <a class="active" onclick="showPanel('home',this)">
+            <div class="fa-solid fa-house"></div> Home</a>
+          <a onclick="showPanel('about',this)">
+            <div class="fa-solid fa-user"></div> About</a>
+          <a onclick="showPanel('projects',this)">
+            <div class="fa-solid fa-folder-open"></div> Projects</a>
+          <a onclick="showPanel('contact',this)">
+            <div class="fa-solid fa-envelope"></div> Contact</a>
+        </nav>
+        <div class="icon-row">
+          <a href="https://github.com/uncertain6" title="GitHub">
+            <i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/yuqiliu07/" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/yuqi1363/" title="Instagram">
+            <i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="right glass">
+        <div class="topbar">
+          <span class="pill" id="clock">--:--:--</span>
+          <span class="title">Welcome!</span>
+          <span class="pill">Open to Summer 2027</span>
+        </div>
+
+        <div class="panel-wrap">
+          <div class="panel active" id="panel-home">
+            <div class="avatar-lg"></div>
+            <h2>Hi, I'm Yuqi Liu</h2>
+            <p class="lead">Computer Science &amp; Philosophy student at UTM. Building things with AI, curiosity, and a healthy amount of debugging.</p>
+            <span class="badge">Open to Summer 2027 internships</span>
+          </div>
+
+          <div class="panel" id="panel-about">
+            <div class="assistant-txt">
+              <div class="avatar"></div>
+              <p><b>Yuqi says:</b> I'm a CS &amp; Philosophy student at UTM, into web dev, AI, and sci-fi. Based in Mississauga, ON. Here's the stack I usually reach for.</p>
+            </div>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span>
+              <span class="tag">Algorithms</span><span class="tag">OOP</span><span class="tag">Git</span><span class="tag">GitHub</span>
+            </div>
+          </div>
+
+          <div class="panel" id="panel-projects">
+            <div class="grid">
+              <a class="card" href="https://mp.weixin.qq.com/s/OjJNTV0A_8rt8Vjb83TEqQ" target="_blank">
+                <div class="ico"><i class="fa-solid fa-book-open"></i></div><h3>WeChat History</h3><p>Photography · Storytelling</p>
+              </a>
+              <a class="card" href="https://opensea.io/collection/50blessings" target="_blank">
+                <div class="ico"><i class="fa-solid fa-palette"></i></div><h3>NFT Collection</h3><p>GIMP · ArDrive · Web3</p>
+              </a>
+              <a class="card" href="https://www.behance.net/gallery/251036131/Midjourney-AI-Art-BY-Yuqi-Liu" target="_blank">
+                <div class="ico"><i class="fa-solid fa-wand-magic-sparkles"></i></div><h3>Midjourney AI Art</h3><p>Prompt Engineering</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="panel" id="panel-contact">
+            <h2>Let's connect</h2>
+            <p class="lead">yuqiliu2007@gmail.com</p>
+            <div class="socials">
+              <a href="https://github.com/uncertain6"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/yuqiliu07/"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/yuqi1363/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <footer>Made in 2026</footer>
+      </div>
     </div>
-  </aside>
 
-  <main class="main glass">
-    <div class="topbar">
-      <span class="pill" id="clock">--:--:--</span>
-      <span class="title">Welcome!</span>
-      <span class="pill">Open to Summer 2027</span>
-    </div>
-
-    <div class="panel-wrap">
-      <div class="panel active" id="panel-home">
-        <div class="avatar-lg"></div>
-        <h2>Hi, I'm Yuqi Liu</h2>
-        <p class="lead">Computer Science &amp; Philosophy student at UTM. Building things with AI, curiosity, and a healthy amount of debugging.</p>
-        <span class="badge">Open to Summer 2027 internships</span>
-      </div>
-
-      <div class="panel" id="panel-about">
-        <div class="assistant-txt">
-          <div class="avatar"></div>
-          <p><b>Yuqi says:</b> I'm a CS &amp; Philosophy student at UTM, into web dev, AI, and sci-fi. Based in Mississauga, ON. Here's the stack I usually reach for.</p>
-        </div>
-        <div class="tags">
-          <span class="tag">Python</span><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span>
-          <span class="tag">Algorithms</span><span class="tag">OOP</span><span class="tag">Git</span><span class="tag">GitHub</span>
-        </div>
-      </div>
-
-      <div class="panel" id="panel-projects">
-        <div class="grid">
-          <a class="card" href="https://mp.weixin.qq.com/s/OjJNTV0A_8rt8Vjb83TEqQ" target="_blank" onmouseenter="hoverSound(500)">
-            <div class="ico"><i class="fa-solid fa-book-open"></i></div><h3>WeChat History</h3><p>Photography · Storytelling</p>
-          </a>
-          <a class="card" href="https://opensea.io/collection/50blessings" target="_blank" onmouseenter="hoverSound(520)">
-            <div class="ico"><i class="fa-solid fa-palette"></i></div><h3>NFT Collection</h3><p>GIMP · ArDrive · Web3</p>
-          </a>
-          <a class="card" href="https://www.behance.net/gallery/251036131/Midjourney-AI-Art-BY-Yuqi-Liu" target="_blank" onmouseenter="hoverSound(540)">
-            <div class="ico"><i class="fa-solid fa-wand-magic-sparkles"></i></div><h3>Midjourney AI Art</h3><p>Prompt Engineering</p>
-          </a>
-          <!-- add more <a class="card">...</a> blocks here, panel scrolls automatically -->
-        </div>
-      </div>
-
-      <div class="panel" id="panel-contact">
-        <h2>Let's connect</h2>
-        <p class="lead">yuqiliu2007@gmail.com</p>
-        <div class="socials">
-          <a href="https://github.com/uncertain6"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/yuqiliu07/"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://www.instagram.com/yuqi1363/"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <footer>Built with love by Yuqi</footer>
-  </main>
-</div>
-</div>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
