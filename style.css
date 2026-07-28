@@ -4,7 +4,6 @@
   --pill-border: rgba(255,255,255,.2);
   --text-dim: #cfe6ee;
   --glass-bg: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.02));
-  --glass-border: rgba(255,255,255,0.1);
 }
 
 * {
@@ -38,23 +37,11 @@ body::after {
 .glass {
   position: relative;
   background: var(--glass-bg);
-  backdrop-filter: blur(3px) saturate(150%);
-  -webkit-backdrop-filter: blur(3px) saturate(150%);
-  border: 1px solid var(--glass-border);
-  border-radius: 22px;
+  backdrop-filter: blur(13px) saturate(150%);
+  -webkit-backdrop-filter: blur(13px) saturate(150%);
+  border-radius: 30px;
   box-shadow: 0 20px 50px rgba(0,10,10,.55), inset 0 1px 0 rgba(255,255,255,.3);
   overflow: hidden;
-}
-
-.glass::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 45%;
-  background: linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,0));
-  pointer-events: none;
 }
 
 .content {
@@ -157,10 +144,11 @@ nav a.active {
   flex-direction: column;
 }
 
-.topbar {
+.top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
   margin-bottom: 20px;
   flex-wrap: wrap;
   gap: 10px;
@@ -173,14 +161,14 @@ nav a.active {
   font-weight: 600;
   background: var(--pill-bg);
   border: 1px solid var(--pill-border);
-  color: #dff0ff;
+  color: white;
 }
 
 .title {
   font-size: 28px;
-  font-weight: 300;
+  font-weight: bold;
   letter-spacing: .5px;
-  color: #f2f9ff;
+  color: white;
   text-shadow: 0 1px 12px rgba(120,230,190,.3);
 }
 
@@ -225,22 +213,12 @@ nav a.active {
   max-width: 420px;
 }
 
-.badge {
-  padding: 6px 16px;
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 600;
-  background: linear-gradient(180deg, rgba(79,214,176,.35), rgba(79,214,176,.1));
-  border: 1px solid rgba(79,214,176,.4);
-  color: #c9fbe9;
-}
-
 .assistant-txt {
   display: flex;
   gap: 16px;
   align-items: flex-start;
   text-align: left;
-  max-width: 460px;
+  max-width: 600px;
 }
 
 .avatar {
@@ -254,12 +232,12 @@ nav a.active {
 .assistant-txt p {
   font-size: 14px;
   line-height: 1.6;
-  color: #dfeef6;
+  color: white;
 }
 
 .assistant-txt b {
   display: block;
-  color: #7fe0c8;
+  color: #72e3c7;
   margin-bottom: 6px;
   font-size: 13px;
 }
@@ -267,9 +245,10 @@ nav a.active {
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
   justify-content: center;
   max-width: 420px;
+  margin-top: 15px;
 }
 
 .tag {
@@ -278,8 +257,7 @@ nav a.active {
   font-size: 11px;
   font-weight: 600;
   color: #dff0ff;
-  background: linear-gradient(180deg, rgba(255,255,255,.16), rgba(255,255,255,.03));
-  border: 1px solid rgba(255,255,255,.2);
+  border: 1px solid rgba(255,255,255,0.3);
 }
 
 .grid {
@@ -315,7 +293,7 @@ nav a.active {
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  color: #eaf6ff;
+  color: white;
 }
 
 .card h3 {
@@ -325,7 +303,7 @@ nav a.active {
 
 .card p {
   font-size: 11px;
-  color: #a9c6e0;
+  color: rgb(214, 214, 214);
 }
 
 .socials {
